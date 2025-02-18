@@ -1,17 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import logo from '../logo.svg';
 
 function Header() {
     return (
         <header>
-        <nav>
+        <nav className='navbar'>
+        <div className='logo-container'>
+        <img src={logo} alt="logo" className='logo'/>
+         </div>
             <ul>
             <li>
-                <Link to="/pages/Home.js">Home</Link>
+                <Link to="/">Home</Link>
             </li>
             <li>
-                <Link to="/pages/About.js">About</Link>
+                <Link to="/About">About</Link>
             </li>
             </ul>
         </nav>
