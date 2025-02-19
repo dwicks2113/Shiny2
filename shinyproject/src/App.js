@@ -6,16 +6,22 @@ import AboutPage from './pages/About.js'
 import NotFoundPage from './pages/NotFound.js'
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
+import Banner from './components/Banner.js'
+import Properties from './components/Properties.js'
 
 function App () {
   return (
     <div className='App'>
     <Header />
+    <main>
+    <Banner />
+    <Properties />
     <Routes>
       <Route path='/' element={<HomePage />} />
       <Route path='/about' element={<AboutPage />} />
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
+    </main>
     <Footer />
     </div>
 
