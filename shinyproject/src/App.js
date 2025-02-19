@@ -5,7 +5,7 @@ import HomePage from './pages/Home.js'
 import AboutPage from './pages/About.js'
 import NotFoundPage from './pages/NotFound.js'
 import Header from './components/Header.js'
-
+import Footer from './components/Footer.js'
 
 function App () {
   return (
@@ -16,8 +16,10 @@ function App () {
       <Route path='/about' element={<AboutPage />} />
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
+    <Footer />
     </div>
-   )
+
+    )
 }
 
 export default App

@@ -1,0 +1,22 @@
+Footer {
+  background-color: black;
+  color: white;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.footer-logo {
+  width: 150px;
+  height: auto;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 0;
+}
