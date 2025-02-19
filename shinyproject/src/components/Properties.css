@@ -7,8 +7,8 @@
   padding: 20px;
 }
 .property {
-    width: 240px;
-    height: 240px;
+    width: 30%;
+    height: 250px;
     background-color: #ff6060;
     color: white;
     display: flex;
