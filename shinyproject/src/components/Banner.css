@@ -7,6 +7,8 @@
     border-radius: 25px;
     position: relative;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .overlay {
     background-color: rgba(0, 0, 0, .65);
