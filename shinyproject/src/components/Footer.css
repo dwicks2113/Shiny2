@@ -12,9 +12,11 @@ Footer {
   bottom: 0;
   width: 100%;
 }
-.footer-logo {
-  width: 150px;
+.logo_footer {
+  width: 125px;
   height: auto;
+  gap: 50px;
+  padding: 50px;
 }
 ul {
   list-style-type: none;
