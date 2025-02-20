@@ -1,8 +1,8 @@
 //import logo from './logo.svg';
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import HomePage from './pages/Home.js'
-import AboutPage from './pages/About.js'
+import HomePage from './pages/HomePage.js'
+import AboutPage from './pages/AboutPage.js'
 import NotFoundPage from './pages/NotFound.js'
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
