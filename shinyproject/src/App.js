@@ -1,6 +1,5 @@
-//import logo from './logo.svg';
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import HomePage from './pages/HomePage.js'
 import AboutPage from './pages/AboutPage.js'
 import NotFoundPage from './pages/NotFound.js'
@@ -10,13 +9,16 @@ import Banner from './components/Banner.js'
 import Properties from './components/Properties.js'
 
 function App () {
+  const location = useLocation();
+
   return (
     <div className='App'>
     <Header />
     <main>
     <Banner />
-    <Properties />
-    <Routes>
+    {location.pathname === '/' && <Properties />}
+
+      <Routes>
       <Route path='/' element={<HomePage />} />
       <Route path='/about' element={<AboutPage />} />
       <Route path='*' element={<NotFoundPage />} />
