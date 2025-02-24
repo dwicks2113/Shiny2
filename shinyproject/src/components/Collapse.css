@@ -19,16 +19,18 @@
     align-items: center
 }
 .collapse-button:hover {
-    background-color: #0056b3;
+    background-color: #fe3d3d;
 } 
 .collapse-content {
     margin-top: 10px;
-    display: none;
     padding: 10px;
     background-color: #f9f9f9;
     border-radius: 5px;
     border: 1px solid #ddd;
-}  
+} 
+.collapse-content.hidden {
+    display: none;
+} 
 .arrow {
     width: 0;
     height: 0;
@@ -36,3 +38,11 @@
     border-right: 5px solid transparent;
     border-top: 5px solid white;
 }   
+.right {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.down {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
