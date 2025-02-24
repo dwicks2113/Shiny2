@@ -1,0 +1,21 @@
+import React, { useState } from "react";
+import "./Collapse.css";
+
+function Collapse({ title, children }) {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleCollapse = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <div className="collapse">
+        <button onClick={toggleCollapse} className="collapse-button" >
+        {title}
+        <span className={`arrow ${isOpen ? 'down' : 'right'}`}></span> 
+        </button>
+        {isOpen && <div className="collapse-content">{children}</div>}
+        </div>
+    );
+    }
+
+    export default Collapse;
