@@ -5,16 +5,3 @@
   background-color: #f6f6f6;
   padding: 20px;
 }
-.property {
-    width: 30%;
-    height: 250px;
-    background-color: #ff6060;
-    color: white;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding: 10px;
-    font-size: 18px;
-    border-radius: 10px;
-    margin: 20px 10px;
-}
