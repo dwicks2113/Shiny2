@@ -11,7 +11,8 @@
   background-color: #ff6060;
   background-size: cover;
   background-position: center;
-  color: white;
+  /* color: #ff6060; */
+  cursor: pointer;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
