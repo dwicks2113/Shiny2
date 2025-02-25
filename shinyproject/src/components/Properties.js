@@ -1,20 +1,28 @@
-import React from 'react'
 import './Properties.css'
 import Property from './Property'
 import Gallery from '../Gallery.json'
 
 function Properties () {
-  return (
+    console.log('Gallery', Gallery);
+
+//     const uniqueProperties = Array.from(new Set(Gallery.map(item => item.id)))
+  
+//   .map(id => {
+//     return Gallery.find(item => item.id === id)
+//   });
+
+    return (
     <section className='properties'>
-      <Property
-        title={Gallery[0].title}
-        img={Gallery[0].cover} />
-      <Property />
-      <Property />
-      <Property />
-      <Property />
-      <Property />
+   
+      {Gallery.map((item) => (
+        <Property
+            key={item.id}
+            title={item.title}
+            img={item.cover} /> 
+      ))} 
+      
+   
     </section>
-  )
+  );
 }
 export default Properties

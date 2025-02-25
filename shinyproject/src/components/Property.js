@@ -9,7 +9,7 @@ import './Property.css';
 //      );
 // }
 
-const Property = ({ title, img, id }) => {
+const Property = ({ title, img }) => {
    const propertyStyle = {
      backgroundImage: `url(${img})`
    }
