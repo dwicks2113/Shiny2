@@ -7,24 +7,21 @@ function AboutPage () {
       <h1>About Us</h1>
       <Collapse title='Reliability'>
         <p>
-          Our mission is to provide affordable rental properties to our clients.
+          Les annonces postees sur Kasa garantissent une fiabilite totale. Les photos sont conformes aux logements, et toutes les informations sont regulierement verifiees par nos equipes.
         </p>
         </Collapse>
         <Collapse title='Respect'>
           <p>
-            Our vision is to provide a rental property for every budget.
+          La bienveillance fait partie des valeurs fondatrices de Kasa. Tout utilisateur de notre plateforme se doit de respecter autrui.  
           </p>
           </Collapse>
           <Collapse title='Service'>
-            <p>
-              Our values are quality, affordability, and customer satisfaction.
-            </p>
-            </Collapse> 
-            <Collapse title='Security'>
+            <p>Kasa est disponible pour vous aider dans toutes les etapes de votre reservation. N'hesitez pas a nous contacter si vous avez la moindre question.</p>
+          </Collapse> 
+          <Collapse title='Security'>
               <p>
-                Our goal is to make the rental process as easy as possible for our clients.
-              </p>
-              </Collapse>
+                La securite est la priorite de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement est verifie regulierement par nos equipes pour garantir un sejour serein.</p>
+           </Collapse>
     </div>
   )
 }
