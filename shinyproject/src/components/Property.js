@@ -1,15 +1,8 @@
 import './Property.css';
 
-// 
-//function Property({ title, img, id}) {
-//     return ( 
-//         <><div className='property'>{title}
-//         <img src={img} alt={title} /></div>
-//         </>
-//      );
-// }
 
 const Property = ({ title, img }) => {
+    console.log('Rendering Property:', title);
    const propertyStyle = {
      backgroundImage: `url(${img})`
    }
