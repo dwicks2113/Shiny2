@@ -10,13 +10,13 @@ import Banner from './components/Banner.js'
 
 function App () {
   const location = useLocation();
-  const isNotFoundPage = location.pathname === '/404';
+  const showBanner = !['./404'].includes(location.pathname);
 
   return (
     <div className='App'>
     <Header />
     <main>
-    {!isNotFoundPage && <Banner />}
+    {showBanner && <Banner />}
      
     <Routes>
       <Route path='/' element={<HomePage />} />
