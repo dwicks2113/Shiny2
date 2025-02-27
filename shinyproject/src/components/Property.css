@@ -11,6 +11,7 @@
   font-size: 18px;
   border-radius: 10px;
   margin: 20px 10px;
+  text-decoration: none; 
 }
 .property.image {
   background-size: cover;

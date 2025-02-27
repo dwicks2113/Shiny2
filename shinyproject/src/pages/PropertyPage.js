@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const PropertyCard = ({ property, onClick }) => {
     return (
         <div onClick={onClick}>
