@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import propertyData from "../Gallery.json";
 
 
-const PropertyPage = () => {
+
+const PropertyPage = ({propertyData}) => {
     
     const { id } = useParams();
     console.log("ID from useParams:", id);

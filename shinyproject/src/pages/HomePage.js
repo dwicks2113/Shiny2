@@ -1,12 +1,12 @@
 
 import Properties from "../components/Properties";
 
-const HomePage = () => {
+const HomePage = ({propertyData}) => {
   console.log("Rendering HomePage");
   return (
     <div className="home-page">
     <div className="Banner HomeBanner"></div>
-     <Properties />
+     <Properties propertyData={propertyData} />
     </div>
   );
 };

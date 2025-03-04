@@ -1,24 +1,15 @@
 import React from 'react';
 import './Properties.css';
 import Property from './Property';
-import Gallery from '../Gallery.json';
 
-function Properties () {
+function Properties ({propertyData}) {
     console.log('Rendering Properties');
-    console.log('Gallery', Gallery);
+    console.log('propertyData', propertyData);
 
-//     const uniqueProperties = Array.from(new Set(Gallery.map((item => item.id)))
-//     .map(id => {
-//         return Gallery.find(item => item.id === id)
-//     }));
-//     console.log('uniqueProperties', uniqueProperties);
-    
-//     return (
-//     <section className='properties'>
-//    {uniqueProperties.map((item) => (
+
     return (
     <section className='properties'>
-    {Gallery.map((item) => (  
+    {propertyData.map((item) => (  
         <Property
             key={item.id}
             title={item.title}

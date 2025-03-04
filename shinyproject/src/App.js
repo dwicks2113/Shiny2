@@ -7,7 +7,7 @@ import PropertyPage from './pages/PropertyPage.js'
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
 import Banner from './components/Banner.js'
-import propertyData from '../Gallery.json'
+import propertyData from './Gallery.json'
 
 
 function App () {
@@ -21,8 +21,9 @@ function App () {
     {showBanner && <Banner />}
      
     <Routes>
-      <Route path='/' element={<HomePage />} />
-      <Route path='/property/:id' element={<PropertyPage />} />
+      <Route path='/' element={<HomePage propertyData={propertyData} />} />
+      <Route path='/property/:id' element={<PropertyPage propertyData = { propertyData }
+ />} />
       <Route path='/about' element={<AboutPage />} />
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
