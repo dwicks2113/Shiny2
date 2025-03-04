@@ -23,6 +23,7 @@ function Properties () {
             key={item.id}
             title={item.title}
             img={item.cover} 
+            id={item.id}
          /> 
       ))} 
     </section>
