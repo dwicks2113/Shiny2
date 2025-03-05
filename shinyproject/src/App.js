@@ -22,7 +22,7 @@ function App () {
      
     <Routes>
       <Route path='/' element={<HomePage propertyData={propertyData} />} />
-      <Route path='/property/:id' element={<PropertyPage propertyData = { propertyData }
+      <Route path='/property/:id' element={<PropertyPage propertyData={ propertyData }
  />} />
       <Route path='/about' element={<AboutPage />} />
       <Route path='*' element={<NotFoundPage />} />

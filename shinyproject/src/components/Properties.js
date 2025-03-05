@@ -6,7 +6,6 @@ function Properties ({propertyData}) {
     console.log('Rendering Properties');
     console.log('propertyData', propertyData);
 
-
     return (
     <section className='properties'>
     {propertyData.map((item) => (  

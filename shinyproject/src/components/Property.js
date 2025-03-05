@@ -14,10 +14,8 @@ const Property = ({ title, img, id }) => {
 
 return (
   <Link key={propertyStyle.id} to={`/property/${id}`} className='property' style={propertyStyle}>
-  
-     <div className='property-title'>{title}</div>
-    
-    </Link>
+      <div className='property-title'>{title}</div>
+  </Link>
 
     );
 };

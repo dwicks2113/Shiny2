@@ -1,0 +1,92 @@
+.property-page {
+  padding: 20px;
+}
+.property-carousel {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.carousel .control-arrow {
+    opacity: 1;
+    z-index: 10;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.carousel .control-next.control-arrow::before, 
+.carousel .control-prev.control-arrow::before {
+    border: solid #fff;
+    content: '';
+    display: inline-block;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+}
+.carousel .slider-wrapper {
+    overflow: hidden;
+    margin: 0 auto;
+    height: 500px;
+}
+.carousel .slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel .thumbs-wrapper {
+    display: none;
+}
+.tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.tag {
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.rating {
+  margin-top: 10px;
+}
+.collapsible-section {
+  margin-top: 20px;
+}
+.collapsible-button {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.collapsible-content {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+.collapsible-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+.property-page p {
+  margin-top: 20px;
+}
+/* .carousel .slide img {
+  max-height: 45%;
+  object-fit: cover;
+} */
