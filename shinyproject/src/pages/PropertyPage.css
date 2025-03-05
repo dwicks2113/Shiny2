@@ -5,27 +5,35 @@
   margin: 0 auto;
   max-width: 800px;
 }
+h1 {
+  margin-top: 0;
+  text-align: left;
+} 
+h4 {
+  margin-top: 0;
+  text-align: left;
+}
+.property-carousel .carousel-item {
+    width: 100%;
+    height: auto;
+}
 .carousel-item img {
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
 .carousel .control-arrow {
-    opacity: 1;
+    opacity: 5;
     z-index: 10;
     display: block;
-    background: rgba(0, 0, 0, 0.5);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
     cursor: pointer;
 }
 .carousel .control-next.control-arrow::before, 
 .carousel .control-prev.control-arrow::before {
-    border: solid #fff;
-    content: '';
+    /* border: solid #fff; */
+    /* content: '';
     display: inline-block;
-    border-width: 0 3px 3px 0;
+    border-width: 0 3px 3px 0; */
     padding: 3px;
 }
 .carousel .slider-wrapper {
@@ -38,11 +46,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .carousel .slide {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .carousel .thumbs-wrapper {
     display: none;
@@ -53,7 +63,7 @@
   margin-top: 10px;
 }
 .tag {
-  background-color: #eee;
+  background-color: #ff6060;
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -64,8 +74,8 @@
   margin-top: 20px;
 }
 .collapsible-button {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #ff6060;
+  color: white;
   padding: 10px;
   width: 100%;
   text-align: left;
@@ -77,7 +87,8 @@
 }
 .collapsible-content {
   padding: 10px;
-  border-top: 1px solid #ccc;
+  text-align: left;
+  border-top: 1px solid #d05a5a;
 }
 .collapsible-content ul {
   list-style-type: none;

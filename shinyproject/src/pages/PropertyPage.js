@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import data from "./Gallery.json";
 import "./PropertyPage.css";
-// import Properties from '../components/Properties'
+import Properties from '../components/Properties'
 
 const CollapsibleSection = ({ title, content }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,7 @@ const PropertyPage = ({ propertyData }) => {
     const { id } = useParams();
     console.log("ID from useParams:", id);
     const property = propertyData.find(item => item.id === id);
-    // <Properties propertyData={propertyData} />
+     <Properties propertyData={propertyData} />
 
     if (!property) {
     return <div>Property not found!</div>;
