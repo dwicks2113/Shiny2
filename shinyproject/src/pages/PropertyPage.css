@@ -31,7 +31,7 @@ h4 {
     object-fit: cover;
 }
 .carousel .control-arrow {
-    opacity: 35;
+    opacity: 50;
     z-index: 15;
     display: block;
     cursor: pointer;
@@ -61,6 +61,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     width: 100%;
 }
 .carousel .thumbs-wrapper {
@@ -68,6 +69,8 @@ h4 {
 }
 .property-info {
   margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
   .main-info {
   display: flex;
@@ -121,7 +124,7 @@ h4 {
   align-items: end;
 }
 .collapsible-section {
-  margin-top: 20px;
+  margin: 10px  40px 10px 40px;
 }
 .collapsible-button {
   background-color: #ff6060;
@@ -136,13 +139,16 @@ h4 {
   transition: 0.4s;
 }
 .collapsible-content {
-  padding: 10px;
+  gap: 10px;
   text-align: left;
   border-top: 1px solid #d05a5a;
 }
 .collapsible-content ul {
+    display: flex;
+    flex-direction: column;
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
+  gap: 5px;
 }
 .property-page p {
   margin-top: 20px;
