@@ -1,15 +1,23 @@
 .property-page {
   padding: 20px;
+  width: 100%;
+}
+banner {
+  display: none;
 }
 .property-carousel {
   margin: 0 auto;
   max-width: 800px;
 }
 h1 {
-  margin-top: 0;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 36px;
   text-align: left;
+  color: #ff6060;
 } 
 h4 {
+    color: black;
   margin-top: 0;
   text-align: left;
 }
@@ -23,23 +31,24 @@ h4 {
     object-fit: cover;
 }
 .carousel .control-arrow {
-    opacity: 5;
-    z-index: 10;
+    opacity: 35;
+    z-index: 15;
     display: block;
     cursor: pointer;
 }
 .carousel .control-next.control-arrow::before, 
 .carousel .control-prev.control-arrow::before {
-    /* border: solid #fff; */
-    /* content: '';
+    border: solid black;
+    content: '';
     display: inline-block;
-    border-width: 0 3px 3px 0; */
+    border-width: 0 5px 5px 0;
     padding: 3px;
 }
 .carousel .slider-wrapper {
     overflow: hidden;
-    margin: 0 auto;
-    height: 500px;
+    object-fit: cover;
+    margin: 0;
+    height: 450px;
 }
 .carousel .slider {
     position: relative;
@@ -57,18 +66,59 @@ h4 {
 .carousel .thumbs-wrapper {
     display: none;
 }
+.property-info {
+  margin-top: 20px;
+}
+  .main-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.property-title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 .tags {
   display: flex;
+  align-items: flex-start;
   gap: 10px;
   margin-top: 10px;
 }
 .tag {
   background-color: #ff6060;
+  color: white;
   padding: 5px 10px;
   border-radius: 5px;
 }
+.host-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+.host {
+        color: #ff6060;
+}
+.host-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.tags-rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 .rating {
   margin-top: 10px;
+  align-items: end;
 }
 .collapsible-section {
   margin-top: 20px;

@@ -55,24 +55,36 @@ const PropertyPage = ({ propertyData }) => {
         </div>
             ))}
         </Carousel>
-        
-        <h1>{property.title}</h1>
-            <h4>{property.location}</h4>
-        <div className="tags">
-            {property.tags.map((tag, index) => (
-                <span key={index} className="tag">
-                    {tag}
-                </span>
-            ))}
-        </div>
-        <div className="rating">
-            <span>Rated: {property.rating} out of 5 stars</span>
+        <section className="property-info">
+        <div className="property-info">
+            <div className="main-info">
+                <div className="property-title">
+                    <h1>{property.title}</h1>
+                    <h4>{property.location}</h4>    
+                </div>     
+                
+                <div className="host-info">
+                    <h3 className="host">{property.host.name}</h3>
+                    <img className="host-photo" src={property.host.picture} alt={property.host.name} />
+                </div>
             </div>
+            <div className="tags-rating">
+                <div className="tags">
+                    {property.tags.map((tag, index) => (
+                    <span key={index} className="tag">
+                    {tag}
+                    </span>
+                    ))}
+                </div>
+                <div className="rating">
+                    <span>Rated: {property.rating} out of 5 stars</span>
+                </div>
+            </div>
+        </div>
+       </section>
         <CollapsibleSection title="Description" content={property.description} />
         <CollapsibleSection title="Amenities" content={property.equipments} />
       
-        <h3>Host: {property.host.name}</h3>
-        <img src={property.host.picture} alt={property.host.name} />
         
         
     </div>  
