@@ -1,0 +1,12 @@
+.rating {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: #ff6060;
+}
+.rating .fa-star,
+.rating .fa-star-half-alt,
+.rating .fa-star-o {
+    color: #ff6060;
+    margin-right: 5px;
+}

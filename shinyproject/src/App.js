@@ -8,8 +8,6 @@ import Header from './components/Header.js'
 import Footer from './components/Footer.js'
 import Banner from './components/Banner.js'
 import propertyData from './Gallery.json'
-import StarRating from './components/StarRating.js'
-
 
 function App () {
   const location = useLocation();

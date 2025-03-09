@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import StarRating from "../components/StarRating";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // import data from "./Gallery.json";
@@ -76,9 +77,8 @@ const PropertyPage = ({ propertyData }) => {
                     </span>
                     ))}
                 </div>
-                <div className="rating">
-                    <span>Rated: {property.rating} out of 5 stars</span>
-                </div>
+                <StarRating rating={property.rating} />
+                
             </div>
         </div>
        </section>
