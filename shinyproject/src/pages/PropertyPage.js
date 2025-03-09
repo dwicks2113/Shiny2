@@ -41,7 +41,7 @@ const PropertyPage = ({ propertyData }) => {
     return <div>Property not found!</div>;
     } 
     return (
-        <div className="property-page">
+    <div className="property-page">
         
       <Carousel 
             showThumbs={false} 
@@ -52,7 +52,7 @@ const PropertyPage = ({ propertyData }) => {
             {property.pictures.map((picture, index) => (
                 <div key={index} className="carousel-item">
                     <img src={picture} alt={`Property ${index + 1}`} />
-        </div>
+    </div>
             ))}
         </Carousel>
         <section className="property-info">
@@ -82,9 +82,10 @@ const PropertyPage = ({ propertyData }) => {
             </div>
         </div>
        </section>
-        <CollapsibleSection title="Description" content={property.description} />
-        <CollapsibleSection title="Amenities" content={property.equipments} />
-      
+        <section className="collapsible">
+            <CollapsibleSection title="Description" content={property.description} />
+            <CollapsibleSection title="Amenities" content={property.equipments} />
+        </section>
         
         
     </div>  
