@@ -54,13 +54,13 @@ h4 {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
 }
 .carousel .slide {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     overflow: hidden;
     width: 100%;
 }
@@ -128,7 +128,7 @@ h4 {
     flex-direction: row nowrap;
 }
 .collapsible-section {
-  margin: 40px  40px 10px 40px;
+  margin: 40px  40px 10px 30px;
   display: flex;
   flex-direction: column;
   width: 50%;
