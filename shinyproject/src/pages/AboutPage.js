@@ -1,15 +1,14 @@
 import React from 'react'
 import Collapse from '../components/Collapse'
-import Banner from '../components/Banner'
+// import Banner from '../components/Banner'
 
 function AboutPage () {
   return (
     <div className='about-page'>
-      <div className='Banner about-banner'></div>
-
+      {/* <Banner customClass='about-banner' />  */}
       
-      <div>
-      
+    <div>
+ 
       <Collapse title='Reliability'>
         <p>
           Les annonces postees sur Kasa garantissent une fiabilite totale. Les photos sont conformes aux logements, et toutes les informations sont regulierement verifiees par nos equipes.

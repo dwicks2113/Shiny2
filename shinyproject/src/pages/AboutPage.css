@@ -1,4 +1,28 @@
-.banner .about-banner {
+
+.about-page {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.overlay .about-banner {
   background-image: url('../AboutBanner.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+}
+.collapse-content {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
