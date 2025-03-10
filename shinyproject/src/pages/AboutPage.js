@@ -1,10 +1,15 @@
 import React from 'react'
 import Collapse from '../components/Collapse'
+import Banner from '../components/Banner'
 
 function AboutPage () {
   return (
-    <div>
-      <h1>About Us</h1>
+    <div className='about-page'>
+      <div className='Banner about-banner'></div>
+
+      
+      <div>
+      
       <Collapse title='Reliability'>
         <p>
           Les annonces postees sur Kasa garantissent une fiabilite totale. Les photos sont conformes aux logements, et toutes les informations sont regulierement verifiees par nos equipes.
@@ -23,6 +28,7 @@ function AboutPage () {
                 La securite est la priorite de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement est verifie regulierement par nos equipes pour garantir un sejour serein.</p>
            </Collapse>
     </div>
+  </div>  
   )
 }
 

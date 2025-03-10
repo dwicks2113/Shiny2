@@ -15,6 +15,7 @@ return (
     <div className="collapsible-section">
         <button className="collapsible-button" onClick={toggle}>
             {title}
+            <span className={`arrow ${isOpen ? "open" : "closed"}`}></span>
         </button>
         {isOpen && (
             <div className="collapsible-content">

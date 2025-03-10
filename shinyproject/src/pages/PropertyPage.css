@@ -2,9 +2,9 @@
   padding: 20px;
   width: 100%;
 }
-banner {
+/* banner {
   display: none;
-}
+} */
 .property-carousel {
   margin: 0 auto;
   max-width: 800px;
@@ -125,7 +125,7 @@ h4 {
 }
 .collapsible {
     display: flex;
-    flex-direction: row nowrap;
+    flex-direction: row;
 }
 .collapsible-section {
   margin: 40px  40px 10px 30px;
@@ -136,6 +136,9 @@ h4 {
 .collapsible-button {
   background-color: #ff6060;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   width: 100%;
   text-align: left;
@@ -149,6 +152,13 @@ h4 {
   gap: 10px;
   text-align: left;
   border-top: 1px solid #d05a5a;
+}
+.arrow {
+  transition: transform 0.3s;
+  size: 20px;
+}
+.arrow.open {
+  transform: rotate(180deg);
 }
 .collapsible-content ul {
     display: flex;

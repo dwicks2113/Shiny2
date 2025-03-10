@@ -5,7 +5,7 @@ const HomePage = ({propertyData}) => {
   console.log("Rendering HomePage");
   return (
     <div className="home-page">
-    <div className="Banner HomeBanner"></div>
+    <div className="Banner home-banner"></div>
      <Properties propertyData={propertyData} />
     </div>
   );

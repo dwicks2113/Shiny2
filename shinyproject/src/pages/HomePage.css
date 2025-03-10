@@ -1,30 +1,8 @@
-.banner.HomeBanner {
+/* .banner.HomeBanner {
     background-image: url('../HomeBanner.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 200px;
-    border-radius: 25px;
-    position: relative;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.overlay {
-    background-color: rgba(0, 0, 0, .40);
-    border-radius: 25px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+ }
 .banner-text {
     color: white;
     font-size: 48px;
     font-weight: 700;
-}
+} */

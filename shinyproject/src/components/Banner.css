@@ -1,5 +1,4 @@
 .banner {
-    background-image: url('../background_img.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -27,3 +26,10 @@
     font-size: 48px;
     font-weight: 700;
 }
+.home-banner {
+    background-image: url('../HomeBanner.png');
+}
+.about-banner {
+    background-image: url('../AboutBanner.png');
+}
+

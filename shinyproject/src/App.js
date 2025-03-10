@@ -11,13 +11,23 @@ import propertyData from './Gallery.json'
 
 function App () {
   const location = useLocation();
-  const showBanner = !['./404'].includes(location.pathname);
+  // const shouldShowBanner = () => {
+  //   const bannerRoutes = ['/', '/about'];
+  //   return bannerRoutes.includes(location.pathname);
+  // };
 
+  const bannerClasses = {
+    '/': ' home-banner',
+    '/about': ' about-banner',
+   }
+
+  const customClass = bannerClasses[location.pathname] || ''; 
+  const showBanner = customClass !== undefined;
   return (
     <div className='App'>
     <Header />
     <main>
-    {showBanner && <Banner />}
+    {showBanner && <Banner customClass={customClass} />}
      
     <Routes>
       <Route path='/' element={<HomePage propertyData={propertyData} />} />
