@@ -11,6 +11,7 @@ import propertyData from './Gallery.json'
 
 function App () {
   const location = useLocation();
+  console.log('Current Path:', location.pathname);
   // const shouldShowBanner = () => {
   //   const bannerRoutes = ['/', '/about'];
   //   return bannerRoutes.includes(location.pathname);
@@ -18,11 +19,12 @@ function App () {
 
   const bannerClasses = {
     '/': ' home-banner',
-    '/about': ' about-banner',
+    '/About': ' about-banner',
    }
+// Check to see if current route has a banner
+  const customClass = bannerClasses[location.pathname]; 
+  const showBanner = !!customClass;
 
-  const customClass = bannerClasses[location.pathname] || ''; 
-  const showBanner = customClass !== undefined;
   return (
     <div className='App'>
     <Header />
