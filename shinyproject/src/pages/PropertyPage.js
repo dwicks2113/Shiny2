@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import StarRating from "../components/StarRating";
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import data from "./Gallery.json";
 import "./PropertyPage.css";
 import Properties from '../components/Properties'
+import Carousel from "../components/Carousel";
 
 const CollapsibleSection = ({ title, content }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -43,20 +41,9 @@ const PropertyPage = ({ propertyData }) => {
     return <div>Property not found!</div>;
     } 
     return (
-    <div className="property-page">
-        
-      <Carousel 
-            showThumbs={false} 
-            infiniteLoop={true} 
-            showArrows={true}
-            dynamicHeight={false}
-            className="propert-carousel">
-            {property.pictures.map((picture, index) => (
-                <div key={index} className="carousel-item">
-                    <img src={picture} alt={`Property ${index + 1}`} />
-    </div>
-            ))}
-        </Carousel>
+ <div className="property-page">
+    <Carousel />
+
         <section className="property-info">
         <div className="property-info">
             <div className="main-info">
