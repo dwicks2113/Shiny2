@@ -2,12 +2,13 @@
   padding: 20px;
   width: 100%;
 }
-/* banner {
-  display: none;
-} */
 .property-carousel {
   margin: 0 auto;
   max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 h1 {
   margin-top: 20px;
@@ -22,45 +23,64 @@ h4 {
   text-align: left;
 }
 .property-carousel .carousel-item {
-    width: 100%;
-    height: auto;
-}
-.carousel-item img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
     width: 100%;
     height: 500px;
-    object-fit: cover;
+    object-fit: contain;
+}
+.carousel-item img {
+     display: block;
+    margin: 0 auto;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+   
 }
 .carousel .control-arrow {
-    opacity: 100%;
-    z-index: 15;
-    display: block;
-    cursor: pointer;
+  display: block !important;  /* force display */
+  background: #ff6060 !important;
+  border: none;
+  color: rgb(8, 8, 8) !important;
+  font-size: 100px !important;
+  /* width: 50px;
+  height: 50px;
+  opacity: 0.8; */
+  z-index: 9999;
+  cursor: pointer;
+  /* /transition: opacity 0.3s ease, transform 0.3s ease; */
 }
-.carousel .control-next.control-arrow::before, 
-.carousel .control-prev.control-arrow::before {
-    border: solid black;
-    content: '';
-    display: inline-block;
-    border-width: 0 5px 5px 0;
-    padding: 3px;
+.carousel .control-next.control-arrow {
+    right: 20px;
+}
+.carousel .control-prev.control-arrow {
+    left: 20px;
+}
+.carousel .control-arrow:hover {
+    opacity: 1;
+    transform: scale(1.2);
 }
 .carousel .slider-wrapper {
     overflow: hidden;
-    object-fit: cover;
-    margin: 0;
-    height: 450px;
-}
-.carousel .slider {
-    position: relative;
+    height: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+/* .carousel .slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-}
+} */
 .carousel .slide {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 500px;
     overflow: hidden;
     width: 100%;
 }
@@ -155,7 +175,7 @@ h4 {
 }
 .arrow {
   transition: transform 0.3s;
-  size: 20px;
+  font-size: 20px;
 }
 .arrow.open {
   transform: rotate(180deg);

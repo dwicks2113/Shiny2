@@ -12,11 +12,7 @@ import propertyData from './Gallery.json'
 function App () {
   const location = useLocation();
   console.log('Current Path:', location.pathname);
-  // const shouldShowBanner = () => {
-  //   const bannerRoutes = ['/', '/about'];
-  //   return bannerRoutes.includes(location.pathname);
-  // };
-
+  
   const bannerClasses = {
     '/': ' home-banner',
     '/About': ' about-banner',

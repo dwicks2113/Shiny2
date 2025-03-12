@@ -9,11 +9,7 @@ function Footer () {
     <footer>
     <div className='footer-container'>
       <img src={logo_footer} alt='logo' className='logo_footer' />
-      {/* <ul>
-          <li>
-            <Link to='/'>Return to Home page</Link>
-          </li>
-      </ul> */}
+      
           <img src={footer_copyright} alt='Copyright' className='footer_copyright' />
         </div>
     </footer>
