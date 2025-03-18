@@ -35,14 +35,20 @@ const PropertyPage = ({ propertyData }) => {
     const { id } = useParams();
     console.log("ID from useParams:", id);
     const property = propertyData.find(item => item.id === id);
-     <Properties propertyData={propertyData} />
+    const images = property.pictures;
+    console.log("Property from propertyData:", property);
+    console.log("Images array: ", images);
+    
+    <Properties propertyData={propertyData} />
 
     if (!property) {
     return <div>Property not found!</div>;
     } 
     return (
+        
  <div className="property-page">
-    <Carousel />
+ 
+    <Carousel images={images} />
 
         <section className="property-info">
         <div className="property-info">
