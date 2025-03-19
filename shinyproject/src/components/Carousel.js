@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Carousel.css'
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs'
+// /import { data } from 'react-router-dom';
 
 const Carousel = ( { images = [] }) => {
    const [index, setIndex] = useState(0);
@@ -19,16 +21,31 @@ const Carousel = ( { images = [] }) => {
     setIndex(newIndex >= length ? 0 : newIndex);
   };
 
+  const handleIndicatorClick = (indicatorIndex) => {
+    setIndex(indicatorIndex);
+  };
+
   return (
     <div className='carousel'>
-      <button onClick={handlePrevious}>Previous</button>
+      <BsArrowLeftCircleFill className='arrow arrow-left' onClick={handlePrevious} />
       <div className='carousel-image'>
         <img src={images[index]} alt={`Slide ${index +1}`} />
-        </div>
-      <button onClick={handleNext}>Next</button>
-      <p>{index}</p>
+      <div className='carousel-indicators'>
+        {images.map((_, i) => (
+          <button
+          key={i}
+          className={`indicator ${i === index ? "active" : ""}`}
+          onClick={() => handleIndicatorClick(i)}
+          aria-label='Go to slide {i + 1}'>
+
+          </button>
+        ))}
+      </div>
+      </div>
+      <BsArrowRightCircleFill className="arrow arrow-right" onClick={handleNext} />
+    
     </div>
   );
 };
 
-export default Carousel
+export default Carousel;
