@@ -26,22 +26,26 @@ const Carousel = ( { images = [] }) => {
   };
 
   return (
-    <div className='carousel'>
-      <BsArrowLeftCircleFill className='arrow arrow-left' onClick={handlePrevious} />
-      <div className='carousel-image'>
-        <img src={images[index]} alt={`Slide ${index +1}`} />
-      <div className='carousel-indicators'>
-        {images.map((_, i) => (
-          <button
-          key={i}
-          className={`indicator ${i === index ? "active" : ""}`}
-          onClick={() => handleIndicatorClick(i)}
-          aria-label='Go to slide {i + 1}'>
+    <div className='carousel'>.
+    ;
 
-          </button>
-        ))}
+      <BsArrowLeftCircleFill className='arrow arrow-left' onClick={handlePrevious} />
+      <div className='carousel-image-wrapper'>
+         <div className='carousel-image'>
+              <img src={images[index]} alt={`Slide ${index +1}`} />
+         </div>
+      <div className='carousel-indicators'>
+         {images.map((_, i) => (
+             <button
+              key={i}
+              className={`indicator ${i === index ? 'active' : ''}`}
+              onClick={() => handleIndicatorClick(i)}
+              aria-label='Go to slide {i + 1}'
+             >@</button>
+         ))}
       </div>
-      </div>
+    </div>
+
       <BsArrowRightCircleFill className="arrow arrow-right" onClick={handleNext} />
     
     </div>

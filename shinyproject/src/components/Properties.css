@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: #f6f6f6;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .property {
   width: 30%;
