@@ -41,7 +41,7 @@ const Carousel = ( { images = [] }) => {
               className={`indicator ${i === index ? 'active' : ''}`}
               onClick={() => handleIndicatorClick(i)}
               aria-label='Go to slide {i + 1}'
-             >@</button>
+             >•</button>
          ))}
       </div>
     </div>
