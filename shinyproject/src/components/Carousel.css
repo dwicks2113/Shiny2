@@ -28,7 +28,7 @@
     object-fit: contain;
 }
 .arrow {
-    position: fixed;
+    position: absolute;
     width: 2rem; 
     height: 2rem;
     color: white;
