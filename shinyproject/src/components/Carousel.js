@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Carousel.css'
+import './Carousel.scss'
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs'
 // /import { data } from 'react-router-dom';
 

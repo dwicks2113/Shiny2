@@ -1,5 +1,5 @@
 import React from 'react';
-import './Properties.css';
+import './Properties.scss';
 import Property from './Property';
 
 function Properties ({propertyData}) {

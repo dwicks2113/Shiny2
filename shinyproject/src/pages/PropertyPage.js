@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import StarRating from "../components/StarRating";
-import "./PropertyPage.css";
+import "./PropertyPage.scss";
 import Properties from '../components/Properties'
 import Carousel from "../components/Carousel";
 

@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import HomePage from './pages/HomePage.js'
 import AboutPage from './pages/AboutPage.js'

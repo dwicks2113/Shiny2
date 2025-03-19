@@ -1,4 +1,4 @@
-import './Property.css';
+import './Property.scss';
 import { Link } from 'react-router-dom'
 
 

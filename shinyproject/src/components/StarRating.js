@@ -1,4 +1,5 @@
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
+import './StarRating.scss';
 
 const StarRating = ({ rating }) => {
     const stars = [];

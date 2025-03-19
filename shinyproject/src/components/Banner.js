@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import './Banner.css';
+import './Banner.scss';
 
 function Banner({ customClass }) {
     const currentLocation = useLocation();
