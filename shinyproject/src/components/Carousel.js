@@ -45,10 +45,8 @@ const Carousel = ( { images = [] }) => {
          ))}
       </div> */}
       <div className='carousel-photo-count'>
-        <span>
-          {index + 1} / {length}
-        </span>
-        </div>
+        {index + 1} / {length}
+      </div>
     
     </div>
 
