@@ -21,20 +21,20 @@ const Carousel = ( { images = [] }) => {
     setIndex(newIndex >= length ? 0 : newIndex);
   };
 
-  const handleIndicatorClick = (indicatorIndex) => {
-    setIndex(indicatorIndex);
-  };
+  // const handleIndicatorClick = (indicatorIndex) => {
+  //   setIndex(indicatorIndex);
+  // };
 
   return (
-    <div className='carousel'>.
-    ;
+    <div className='carousel'>
+   
 
       <BsArrowLeftCircleFill className='arrow arrow-left' onClick={handlePrevious} />
       <div className='carousel-image-wrapper'>
          <div className='carousel-image'>
               <img src={images[index]} alt={`Slide ${index +1}`} />
          </div>
-      <div className='carousel-indicators'>
+      {/* <div className='carousel-indicators'>
          {images.map((_, i) => (
              <button
               key={i}
@@ -43,7 +43,13 @@ const Carousel = ( { images = [] }) => {
               aria-label='Go to slide {i + 1}'
              >•</button>
          ))}
-      </div>
+      </div> */}
+      <div className='carousel-photo-count'>
+        <span>
+          {index + 1} / {length}
+        </span>
+        </div>
+    
     </div>
 
       <BsArrowRightCircleFill className="arrow arrow-right" onClick={handleNext} />
