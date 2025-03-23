@@ -8,6 +8,8 @@ import Header from './components/Header.js'
 import Footer from './components/Footer.js'
 import Banner from './components/Banner.js'
 import propertyData from './Gallery.json'
+import ErrorHandling from './components/ErrorHandling.js'
+
 
 function App () {
   const location = useLocation();
@@ -22,6 +24,7 @@ function App () {
   const showBanner = !!customClass;
 
   return (
+    <ErrorHandling>
     <div className='App'>
     <Header />
     <main>
@@ -37,6 +40,7 @@ function App () {
     </main>
     <Footer />
     </div>
+    </ErrorHandling>
 
     )
 }
