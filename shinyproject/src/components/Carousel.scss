@@ -30,18 +30,21 @@
 .arrow {
     position: absolute;
     top: 50%;
+
+    transform: translateY(-50%);
     width: 2rem; 
     height: 2rem;
     color: white;
     filter: drop-shadow(0 0 5px black);
     cursor: pointer;
     border: none;
+    z-index: 10; // make sure it appears on top of image
 }
 .arrow-right {
-    right: 15rem;
+    right: 2rem;
 }
 .arrow-left {
-    left: 15rem;
+    left: 2rem;
 }
 .carousel-indicators {
     position: absolute;
