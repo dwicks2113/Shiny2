@@ -21,22 +21,22 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    margin: 10px;
-    padding: 10px;
-    gap: 50px;
+    // margin: 10px;
+    // padding: 10px;
+    // gap: 50px;
     overflow: hidden;
     background-color: white;
 }
 nav ul li {
     margin: 0;
-    padding: 0;
+    // padding: 0;
 }
 nav ul li a {
     display: block;
     color:black;
     font-size: 24px;
     text-align: center;
-    padding: 14px 16px;
+    // padding: 14px 16px;
     text-decoration: none;
 }
 nav ul li a:hover {
