@@ -1,13 +1,12 @@
 .banner {
     background-size: cover;
     background-position: center;
-    width: 100%;
+    max-width: 1500px;
     height: 223px;
     border-radius: 25px;
     position: relative;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 20px 50px 20px;
 }
 .overlay {
     background-color: rgba(0, 0, 0, .40);

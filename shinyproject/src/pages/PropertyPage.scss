@@ -159,7 +159,8 @@ h4 {
 .collapsible-content {
   gap: 10px;
   text-align: left;
-  border-top: 1px solid #d05a5a;
+  margin: 10px;
+  // border-top: 1px solid #d05a5a;
 }
 .arrow {
   transition: transform 0.3s;
@@ -172,7 +173,8 @@ h4 {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  padding: 0px;
+  padding: 10px;
+  margin: 10px;
   gap: 5px;
 }
 .property-page p {

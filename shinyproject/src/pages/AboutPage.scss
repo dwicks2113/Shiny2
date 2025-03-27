@@ -7,6 +7,12 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+
+  .p {
+    margin-left: 10px;
+    margin-right: 10px;
+    
+  }
 }
 .overlay .about-banner {
   background-image: url('../AboutBanner.png');
@@ -24,5 +30,8 @@
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+}
+.p {
+  text-align: left;
 }
 

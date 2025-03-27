@@ -3,14 +3,14 @@
     margin-bottom: 10px;
     margin: 20px 0;
     justify-items: center;
-
 }
+
 .collapse-button {
     background-color: #ff6060;
     color: white;
     font-size: 24px;
     font-weight: 700;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -18,44 +18,48 @@
     width: 75%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Ensure vertical alignment */
+    position: relative; /* Allow positioning of child elements */
     outline: none;
 
-    hover {
-    background-color: #fe3d3d;
-    } 
-    .arrow {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        padding: 3px;
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-top: 5px solid white;
-        transition: transform 0.2s ease-in-out;
-        }
-    &.right {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        }
-    &.down {
-        transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-        }
+    &:hover {
+        background-color: #fe3d3d;
+    }
+}
 
+.arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: auto; /* Push the arrow to the right */
+    border-left: 10px solid transparent; /* Increased size for visibility */
+    border-right: 10px solid transparent;
+    border-top: 10px solid white; /* Ensure the arrow is visible */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Ensure it's clickable */
+    background-color: transparent; /* Ensure no background interferes */
+    /* Ensure visibility */
+    content: '';
+}
+
+.arrow.right {
+    transform: rotate(0deg);
+}
+
+.arrow.down {
+    transform: rotate(180deg); /* Rotate upside down when open */
 }
 
 .collapse-content {
     width: 75%;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
+    text-align: left;
+    margin-top: 20px;
+    // padding: 30px;
     border-radius: 5px;
-    border: 1px solid #ddd;
-
+   
     .hidden {
     display: none;
     }
-} 
- 
+}
+
 
