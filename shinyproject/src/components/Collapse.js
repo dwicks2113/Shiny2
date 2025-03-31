@@ -11,7 +11,7 @@ function Collapse({ title, children }) {
         <div className='collapse'>
             <button onClick={toggleCollapse} className='collapse-button-about'>
                 {title}
-                <span className={`arrow ${isOpen ? 'down' : 'right'}`}></span>
+                <span className={`collapse-arrow ${isOpen ? 'down' : 'right'}`}></span>
                 {console.log('Arrow rendered with class:', isOpen ? 'down' : 'right')}
             </button>
             {isOpen && <div className='collapse-content'>{children}</div>}

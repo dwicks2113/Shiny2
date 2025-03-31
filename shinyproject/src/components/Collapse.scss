@@ -27,7 +27,7 @@
     }
 }
 
-.arrow {
+.collapse-arrow {
     display: inline-block;
     width: 0;
     height: 0;
@@ -42,11 +42,11 @@
     content: '';
 }
 
-.arrow.right {
+.collapse-arrow.right {
     transform: rotate(0deg);
 }
 
-.arrow.down {
+.collapse-arrow.down {
     transform: rotate(180deg); /* Rotate upside down when open */
 }
 
