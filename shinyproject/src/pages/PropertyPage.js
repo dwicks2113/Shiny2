@@ -50,10 +50,7 @@ const PropertyPage = ({ propertyData }) => {
     showArrows={images.length > 1}
     showPhotoCount={images.length > 1}
  />
- {/* {showCarousel && <Carousel images={images} />} */}
  
-    {/* <Carousel images={images} /> */}
-
         <section className="property-info">
         <div className="property-info">
             <div className="main-info">
@@ -84,12 +81,10 @@ const PropertyPage = ({ propertyData }) => {
             <CollapsibleSection title="Description" content={property.description} />
             <CollapsibleSection title="Amenities" content={property.equipments} />
         </section>
-        
-        
+  
+ 
     </div>  
 
         );
     };
-
-
 export default PropertyPage;
