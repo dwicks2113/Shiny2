@@ -33,11 +33,9 @@ return (
 };
 const PropertyPage = ({ propertyData }) => {
     const { id } = useParams();
-    console.log("ID from useParams:", id);
     const property = propertyData.find(item => item.id === id);
     const images = property.pictures;
-    console.log("Property from propertyData:", property);
-    console.log("Images array: ", images);
+    // const showCarousel = images.length > 1;
     
     <Properties propertyData={propertyData} />
 
@@ -47,8 +45,14 @@ const PropertyPage = ({ propertyData }) => {
     return (
         
  <div className="property-page">
+ <Carousel 
+    images={images} 
+    showArrows={images.length > 1}
+    showPhotoCount={images.length > 1}
+ />
+ {/* {showCarousel && <Carousel images={images} />} */}
  
-    <Carousel images={images} />
+    {/* <Carousel images={images} /> */}
 
         <section className="property-info">
         <div className="property-info">

@@ -22,21 +22,25 @@ const Carousel = ( { images = [] }) => {
 
   return (
     <div className='carousel'>
-   
+    {length > 1 && (
+         
       <BsArrowLeftCircleFill className='arrow arrow-left' onClick={handlePrevious} />
+    )}
+
       <div className='carousel-image-wrapper'>
          <div className='carousel-image'>
               <img src={images[index]} alt={`Slide ${index +1}`} />
          </div>
-      
+      {length > 1 && (
       <div className='carousel-photo-count'>
         {index + 1} / {length}
       </div>
-    
+      )}
     </div>
 
-      <BsArrowRightCircleFill className="arrow arrow-right" onClick={handleNext} />
-    
+      {length > 1 && (
+        <BsArrowRightCircleFill className="arrow arrow-right" onClick={handleNext} />
+      )}
     </div>
   );
 };
