@@ -1,11 +1,10 @@
 import React from 'react'
 import Collapse from '../components/Collapse'
-// import Banner from '../components/Banner'
+import './AboutPage.scss'
 
 function AboutPage () {
   return (
     <div className='about-page'>
-      {/* <Banner customClass='about-banner' />  */}
       
     <div>
  
