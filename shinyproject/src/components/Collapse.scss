@@ -22,6 +22,13 @@
     position: relative; /* Allow positioning of child elements */
     outline: none;
 
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+        padding: 10px 20px;
+        width: 90%;
+        
+    }
+
     &:hover {
         background-color: #fe3d3d;
     }

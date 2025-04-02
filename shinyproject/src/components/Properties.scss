@@ -2,8 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f6f6f6;
+  background-color: #fbf8f8;
   
+  @media screen and (max-width: 768px) {
+  flex-direction: column !important;
+  width: 100%;
+}
+
 }
 .property {
   width: 30%;
@@ -19,6 +24,8 @@
   font-size: 18px;
   border-radius: 10px;
   margin: 20px 10px;
+
+  
 }
 .property-title {
   color: #f7f3f3;

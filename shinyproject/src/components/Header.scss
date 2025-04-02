@@ -15,7 +15,12 @@ header {
 }
 .logo {
     width: 150px;
-    height: auto
+    height: auto;
+
+    @media screen and (max-width: 768px) {
+        width: 100px;
+        
+    }
 }
 nav ul {
     list-style-type: none;
@@ -23,6 +28,8 @@ nav ul {
     justify-content: flex-end;
     overflow: hidden;
     background-color: white;
+
+    
 }
 nav ul li {
     margin: 0;
@@ -33,6 +40,10 @@ nav ul li a {
     font-size: 24px;
     text-align: center;
     text-decoration: none;
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+     }
 }
 nav ul li a:hover {
     border-bottom: solid;
