@@ -1,6 +1,10 @@
 Footer {
+  position: sticky; //keeps in view but allows to move
+  bottom: 0;
+  width: 100%;
   background-color: black;
   color: white;
+  padding: 10px;
 
   @media screen and (max-width: 768px) {
     font-size: 12px;
@@ -13,9 +17,6 @@ Footer {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
   margin-top: 30px;
 
   @media screen and (max-width: 768px) {
@@ -29,9 +30,9 @@ Footer {
 }
 .logo_footer {
   width: 125px;
-  height: auto;
-  gap: 50px;
-  padding: 50px;
+  height: 35px;
+  // gap: 50px;
+  // padding: 50px;
 
   @media screen and (max-width: 768px) {
     width: 100px;

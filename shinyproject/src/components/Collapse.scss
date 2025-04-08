@@ -1,72 +1,86 @@
 .collapse {
-    width: 100%;
-    margin-bottom: 10px;
-    margin: 20px 0;
-    justify-items: center;
+  width: 100%;
+ margin-bottom: 10px;
+//   margin: 20px 0;
+  justify-items: center;
 }
 
 .collapse-button-about {
-    background-color: #ff6060;
-    color: white;
-    font-size: 24px;
-    font-weight: 700;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: left;
-    width: 75%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Ensure vertical alignment */
-    position: relative; /* Allow positioning of child elements */
-    outline: none;
+  background-color: #ff6060;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: left;
+  width: 75%;
+  display: flex;
+  flex-grow: 1; /* Allow the button to grow and fill space */
+  justify-content: space-between;
+  align-items: stretch; /* Ensure vertical alignment */
+  position: relative; /* Allow positioning of child elements */
+  outline: none;
 
-    @media screen and (max-width: 768px) {
-        font-size: 18px;
-        padding: 10px 20px;
-        width: 90%;
-        
-    }
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 90%;
+  }
 
-    &:hover {
-        background-color: #fe3d3d;
-    }
+  &:hover {
+    background-color: #fe3d3d;
+  }
 }
 
 .collapse-arrow {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: auto; /* Push the arrow to the right */
-    border-left: 10px solid transparent; /* Increased size for visibility */
-    border-right: 10px solid transparent;
-    border-top: 10px solid white; /* Ensure the arrow is visible */
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer; /* Ensure it's clickable */
-    background-color: transparent; /* Ensure no background interferes */
-    /* Ensure visibility */
-    content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: auto; /* Push the arrow to the right */
+  border-left: 10px solid transparent; /* Increased size for visibility */
+  border-right: 10px solid transparent;
+  border-top: 10px solid white; /* Ensure the arrow is visible */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer; /* Ensure it's clickable */
+  background-color: transparent; /* Ensure no background interferes */
+  /* Ensure visibility */
+  content: '';
 }
 
 .collapse-arrow.right {
-    transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .collapse-arrow.down {
-    transform: rotate(180deg); /* Rotate upside down when open */
+  transform: rotate(180deg); /* Rotate upside down when open */
 }
 
 .collapse-content {
-    width: 75%;
-    text-align: left;
-    margin-top: 20px;
-    // padding: 30px;
-    border-radius: 5px;
-   
-    .hidden {
+  max-height: auto;
+  overflow: visible;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+  width: 75%;
+  text-align: left;
+//   margin-top: 10px;
+  border-radius: 5px;
+
+  .hidden {
     display: none;
+
+    .open {
+        max-height: 100%;
     }
+  }
+  .collapsible-section.open .collapsible-content {
+    max-height: none;  // Allow full height when open
+    padding: 10px;
+  }
 }
-
-
+.property-page, about-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: auto; //allow dynamic resizing
+}
