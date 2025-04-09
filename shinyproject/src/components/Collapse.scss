@@ -1,8 +1,7 @@
 .collapse {
   width: 100%;
  margin-bottom: 10px;
-//   margin: 20px 0;
-  justify-items: center;
+ justify-items: center;
 }
 
 .collapse-button-about {
@@ -63,7 +62,6 @@
   transition: max-height 0.5s ease-out, padding 0.5s ease-out;
   width: 75%;
   text-align: left;
-//   margin-top: 10px;
   border-radius: 5px;
 
   .hidden {

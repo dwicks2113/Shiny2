@@ -1,7 +1,7 @@
 .property-page {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: fit-content;
   overflow: visible;
 }
 .property-carousel {
@@ -85,6 +85,7 @@ h4 {
   margin-left: 15px;
   flex-grow: 1;  // Allow the property-info to grow and fill the available space
   transition: height 0.5s ease-out;
+  height: fit-content; // Allow the property-info to adjust its height based on content
 
   @media screen and (max-width: 768px) {
   width: 100%;  
