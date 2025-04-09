@@ -13,8 +13,7 @@ import ErrorHandling from './components/ErrorHandling.js'
 
 function App () {
   const location = useLocation();
-  console.log('Current Path:', location.pathname);
-  
+    
   const bannerClasses = {
     '/': ' home-banner',
     '/About': ' about-banner',
